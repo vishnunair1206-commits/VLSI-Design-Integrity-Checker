@@ -25,10 +25,8 @@ A Perl script that parses Verilog/SystemVerilog files to identify:
 - Hardcoded values vs. parameters/macros
 - Combinational loops & inferred latches
 
-
 ### 2. CDC/RDC Checker (cdc_checker.pl)
 Detects unsafe crossings between clock or reset domains by analyzing flop-to-flop transfers and missing synchronizers.
-
 
 ### 3. RTL File Integrity Checker (rtl_integrity.pl)
 Checks for:
@@ -38,14 +36,12 @@ Checks for:
 - Unauthorized modifications using SHA-256
 - Version tracking with Git integration
 
-
 ### 4. DRC Checker (drc_checker.pl)
 Performs compliance checks based on custom rules:
 - Minimum signal width
 - FSM encoding scheme (one-hot, gray, binary)
 - Unexpected latches
 - Signal naming conventions
-
 
 ### 5. STA Pre-Check (sta_precheck.pl)
 Preliminary static timing analysis tool that checks:
@@ -54,10 +50,8 @@ Preliminary static timing analysis tool that checks:
 - Clock skew
 - Floating resets
 
-
 ### 6. PPA Validator (ppa_checker.pl)
 Reports missing clock gating, large combinational paths, and other low-power design deficiencies.
-
 
 ### 7. GUI (TCL-Tk based)
 A TCL-Tk based graphical user interface allows you to:
@@ -67,6 +61,7 @@ A TCL-Tk based graphical user interface allows you to:
 - View output logs and error reports interactively
 
 Launch GUI:
+
 ```bash
 wish gui.tcl
 ```
@@ -74,9 +69,10 @@ wish gui.tcl
 ### 8. Report Generator
 All checkers generate log files in the log folders.
 
-
 ## Workflow
+
 1. Launch the GUI:
+
 ```bash
 wish gui.tcl
 ```
@@ -88,23 +84,28 @@ wish gui.tcl
 ## Dependencies
 
 ### Perl Modules
+
 ```bash
-sudo dnf install perl 
+sudo dnf install perl
 ```
 
 ### TCL/Tk
+
 Install Tcl/Tk (v8.5 or higher):
+
 Ubuntu:
+
 ```bash
 sudo apt-get install tk
 ```
 
-
 ## Installation
+
 1. Clone the repository:
+
 ```bash
-git clone https://github.com/KartikAggawral/vlsi-design-integrity-checker
-cd vlsi-design-integrity-checker
+git clone https://github.com/vishnunair1206-commits/VLSI-Design-Integrity-Checker.git
+cd VLSI-Design-Integrity-Checker
 ```
 
 2. Install the dependencies mentioned above.
